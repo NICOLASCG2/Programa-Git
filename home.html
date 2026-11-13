@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passion Colombia | Inicio</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="cabecera-home">
+
+        <div class="marca-home">
+            <h1>Passion Colombia</h1>
+            <p>Descubre Colombia, vive nuevas experiencias</p>
+        </div>
+
+        <a href="configuracion.html" class="enlace-perfil">
+            Mi perfil
+        </a>
+
+    </header>
+
+    <main class="contenido-home">
+
+        <section class="bienvenida-home">
+            <h2>¡Hola, viajero!</h2>
+            <p>¿Qué lugar de Colombia te gustaría descubrir hoy?</p>
+        </section>
+
+        <section class="buscador-home" aria-label="Buscar destinos">
+
+            <label for="buscar-destino">Busca tu próximo destino</label>
+
+            <input
+                type="search"
+                id="buscar-destino"
+                placeholder="Ej. Eje Cafetero"
+                autocomplete="off">
+
+            <p id="mensaje-busqueda" aria-live="polite"></p>
+
+        </section>
+
+        <section class="categorias-home">
+
+            <h2>Explora Passion Colombia</h2>
+
+            <nav class="menu-categorias" aria-label="Categorías">
+
+                <a href="home.html" class="categoria-activa">Inicio</a>
+                <a href="#rutas">Rutas turísticas</a>
+                <a href="#rutas">Destinos destacados</a>
+                <a href="configuracion.html">Mi perfil</a>
+
+            </nav>
+
+        </section>
+
+        <section class="seccion-rutas" id="rutas">
+
+            <div class="titulo-seccion">
+                <h2>Destinos destacados</h2>
+                <p>Inspírate y planea tu próxima aventura.</p>
+            </div>
+
+            <div class="rejilla-rutas">
+
+                <article class="tarjeta-ruta" data-destino="eje cafetero">
+
+                    <div class="imagen-ruta imagen-cafetero"
+                         role="img"
+                         aria-label="Ilustración representativa del Eje Cafetero">
+                        <span>Eje Cafetero</span>
+                    </div>
+
+                    <div class="informacion-ruta">
+
+                        <p class="etiqueta-destino">Naturaleza y cultura</p>
+
+                        <h3>Eje Cafetero</h3>
+
+                        <p>
+                            Descubre paisajes verdes, cafetales,
+                            pueblos coloridos y la tradición cafetera
+                            de Colombia.
+                        </p>
+
+                        <p class="calificacion">★ 4.9 / 5.0</p>
+
+                        <a href="ruta.html?destino=eje-cafetero" class="boton-ruta">
+    Explorar ruta
+</a>
+
+                    </div>
+
+                </article>
+
+                <article class="tarjeta-ruta"
+                         data-destino="catedral de sal zipaquira">
+
+                    <div class="imagen-ruta imagen-catedral"
+                         role="img"
+                         aria-label="Ilustración representativa de la Catedral de Sal">
+                        <span>Catedral de Sal</span>
+                    </div>
+
+                    <div class="informacion-ruta">
+
+                        <p class="etiqueta-destino">Cultura y patrimonio</p>
+
+                        <h3>Catedral de Sal de Zipaquirá</h3>
+
+                        <p>
+                            Explora una impresionante construcción
+                            subterránea que combina arquitectura,
+                            historia y espiritualidad.
+                        </p>
+
+                        <p class="calificacion">★ 5.0 / 5.0</p>
+
+                        <a href="ruta.html?destino=catedral" class="boton-ruta">
+    Explorar ruta
+</a>
+
+                    </div>
+
+                </article>
+
+                <article class="tarjeta-ruta"
+                         data-destino="boyaca pueblos patrimonio">
+
+                    <div class="imagen-ruta imagen-boyaca"
+                         role="img"
+                         aria-label="Ilustración representativa de los pueblos de Boyacá">
+                        <span>Pueblos de Boyacá</span>
+                    </div>
+
+                    <div class="informacion-ruta">
+
+                        <p class="etiqueta-destino">Historia y tradición</p>
+
+                        <h3>Pueblos patrimonio de Boyacá</h3>
+
+                        <p>
+                            Conoce pueblos llenos de historia,
+                            arquitectura tradicional, plazas
+                            y cultura colombiana.
+                        </p>
+
+                        <p class="calificacion">★ 4.8 / 5.0</p>
+
+    <a href="ruta.html?destino=boyaca" class="boton-ruta">
+    Explorar ruta
+</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="sin-resultados" class="mensaje-vacio" hidden>
+                No encontramos destinos que coincidan con tu búsqueda.
+            </p>
+
+        </section>
+
+    </main>
+
+    <nav class="navegacion-inferior" aria-label="Navegación principal">
+
+        <a href="home.html" aria-current="page">Inicio</a>
+
+        <a href="#rutas">Buscar</a>
+
+        <a href="#rutas">Destinos</a>
+
+        <a href="configuracion.html">Perfil</a>
+
+    </nav>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passion Colombia | Registro</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor-login">
+
+        <section class="tarjeta-login">
+
+            <header class="encabezado-login">
+                <h1>Passion Colombia</h1>
+                <p>Únete y descubre Colombia</p>
+            </header>
+
+            <h2>Crear cuenta</h2>
+
+            <form id="formulario-registro">
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre completo"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ingresa tu teléfono"
+                        autocomplete="tel"
+                        required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="tipo-documento">Tipo de documento</label>
+                    <select
+                        id="tipo-documento"
+                        name="tipo-documento"
+                        required>
+
+                        <option value="">Selecciona una opción</option>
+                        <option value="cc">Cédula de ciudadanía</option>
+                        <option value="ce">Cédula de extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contrasena-registro">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena-registro"
+                        name="contrasena"
+                        placeholder="Crea una contraseña"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+                </div>
+
+                <div class="grupo-terminos">
+                    <input
+                        type="checkbox"
+                        id="aceptar-terminos"
+                        name="aceptar-terminos"
+                        required>
+
+                    <label for="aceptar-terminos">
+                        Acepto los términos y condiciones.
+                    </label>
+                </div>
+
+                <button type="submit" class="boton-principal">
+                    Crear cuenta
+                </button>
+
+                <a href="index.html" class="boton-secundario">
+                    Cancelar
+                </a>
+
+            </form>
+
+            <p class="texto-registro">
+                ¿Ya tienes cuenta?
+                <a href="index.html">Inicia sesión</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

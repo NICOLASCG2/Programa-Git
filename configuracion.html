@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configuración | Passion Colombia</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="pagina-configuracion">
+
+    <main class="interfaz-configuracion">
+
+        <header class="encabezado-figma">
+            <a href="home.html" class="volver-configuracion"
+               aria-label="Volver al inicio">‹</a>
+
+            <h1>Configuración y accesibilidad</h1>
+        </header>
+
+        <section class="seccion-figma">
+            <h2>ACCESIBILIDAD</h2>
+
+            <div class="control-figma">
+                <span id="etiqueta-contraste">Contraste</span>
+
+                <div class="control-numerico">
+                    <button type="button" id="contraste-menos"
+                            aria-label="Disminuir contraste">−</button>
+
+                    <output id="valor-contraste" aria-live="polite">3</output>
+
+                    <button type="button" id="contraste-mas"
+                            aria-label="Aumentar contraste">+</button>
+                </div>
+            </div>
+
+            <div class="control-figma">
+                <label for="valor-fuente">Tamaño de fuente</label>
+
+                <div class="control-numerico">
+                    <button type="button" id="fuente-menos"
+                            aria-label="Disminuir tamaño de fuente">−</button>
+
+                    <output id="valor-fuente-visible">10</output>
+
+                    <button type="button" id="fuente-mas"
+                            aria-label="Aumentar tamaño de fuente">+</button>
+                </div>
+
+                <input type="hidden" id="valor-fuente" value="10">
+            </div>
+
+            <div class="control-figma control-lector">
+                <label for="lector-pantalla">Lector de pantalla</label>
+
+                <label class="interruptor-figma">
+                    <input type="checkbox" id="lector-pantalla">
+                    <span class="interruptor-visual"></span>
+                </label>
+            </div>
+
+            <p id="mensaje-accesibilidad" class="mensaje-figma"
+               role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="seccion-figma seccion-cuenta">
+            <h2>CUENTA</h2>
+
+            <a href="#editar-perfil" class="opcion-figma"
+               id="opcion-editar-perfil">
+                <span>Editar perfil</span>
+                <span aria-hidden="true">&gt;</span>
+            </a>
+
+            <a href="#cambiar-contrasena" class="opcion-figma"
+               id="opcion-contrasena">
+                <span>Cambiar contraseña</span>
+                <span aria-hidden="true">&gt;</span>
+            </a>
+
+            <a href="#notificaciones" class="opcion-figma"
+               id="opcion-notificaciones">
+                <span>Notificaciones</span>
+                <span aria-hidden="true">&gt;</span>
+            </a>
+        </section>
+
+        <nav class="navegacion-figma" aria-label="Navegación principal">
+            <a href="home.html">Inicio</a>
+            <a href="home.html#buscar-destino">Buscar</a>
+            <a href="configuracion.html#opcion-notificaciones">Notificaciones</a>
+            <a href="configuracion.html" aria-current="page">Perfil</a>
+        </nav>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

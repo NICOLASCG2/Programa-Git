@@ -1,0 +1,1071 @@
+/* =========================================
+   PASSION COLOMBIA
+   HOJA DE ESTILOS PRINCIPAL
+========================================= */
+
+/* 1. CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5C542;
+    color: #333333;
+    line-height: 1.6;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+a {
+    transition: color 0.2s, background-color 0.2s;
+}
+
+:focus-visible {
+    outline: 3px solid #2E7DC4;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   2. INICIO DE SESIÓN
+========================================= */
+
+.contenedor-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.tarjeta-login {
+    width: 100%;
+    max-width: 430px;
+    background-color: #FFFFFF;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.encabezado-login {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.encabezado-login h1 {
+    color: #2E7DC4;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.encabezado-login p {
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.tarjeta-login h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.grupo-campo input,
+.grupo-campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus {
+    outline: 2px solid #2E7DC4;
+    border-color: #2E7DC4;
+}
+
+.enlace-recuperar {
+    display: block;
+    text-align: right;
+    color: #2E7DC4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+}
+
+.enlace-recuperar:hover {
+    text-decoration: underline;
+}
+
+.boton-principal {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: #E53935;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #C62828;
+}
+
+.texto-registro {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95rem;
+}
+
+.texto-registro a {
+    color: #2E7DC4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto-registro a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   3. REGISTRO
+========================================= */
+
+.grupo-terminos {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.grupo-terminos input {
+    margin-top: 6px;
+    accent-color: #2E7DC4;
+    flex-shrink: 0;
+}
+
+.grupo-terminos label {
+    font-size: 0.9rem;
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #2E7DC4;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-secundario:hover {
+    background-color: #205F98;
+}
+
+
+/* =========================================
+   4. ENCABEZADO DE LA PÁGINA PRINCIPAL
+========================================= */
+
+.cabecera-home {
+    background-color: #F5C542;
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #E6B52E;
+}
+
+.marca-home h1 {
+    color: #2E7DC4;
+    font-size: 2rem;
+}
+
+.marca-home p {
+    color: #333333;
+}
+
+.enlace-perfil {
+    display: inline-block;
+    background-color: #2E7DC4;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.enlace-perfil:hover {
+    background-color: #205F98;
+}
+
+
+/* =========================================
+   5. CONTENIDO PRINCIPAL
+========================================= */
+
+.contenido-home {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto 110px;
+}
+
+.bienvenida-home {
+    margin-bottom: 30px;
+}
+
+.bienvenida-home h2 {
+    color: #333333;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.bienvenida-home p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   6. BUSCADOR DE DESTINOS
+========================================= */
+
+.buscador-home {
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.buscador-home label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.buscador-home input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.buscador-home input:focus {
+    outline: 2px solid #2E7DC4;
+}
+
+#mensaje-busqueda {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   7. CATEGORÍAS
+========================================= */
+
+.categorias-home {
+    margin-bottom: 35px;
+}
+
+.categorias-home h2 {
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.menu-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu-categorias a {
+    background-color: #FFFFFF;
+    color: #2E7DC4;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #2E7DC4;
+    font-weight: bold;
+}
+
+.menu-categorias a:hover,
+.menu-categorias .categoria-activa {
+    background-color: #2E7DC4;
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   8. TARJETAS DE DESTINOS
+========================================= */
+
+.titulo-seccion {
+    margin-bottom: 22px;
+}
+
+.titulo-seccion h2 {
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.titulo-seccion p {
+    color: #555555;
+}
+
+.rejilla-rutas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.tarjeta-ruta {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-ruta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-ruta {
+    min-height: 180px;
+    display: flex;
+    align-items: end;
+    padding: 18px;
+    background-color: #DCE8C7;
+    background-image: linear-gradient(
+        135deg,
+        #8CBF88,
+        #D9E6A5
+    );
+}
+
+.imagen-ruta span {
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #333333;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.imagen-cafetero {
+    background-image: linear-gradient(
+        135deg,
+        #8CBF88,
+        #D9E6A5
+    );
+}
+
+.imagen-catedral {
+    background-image: linear-gradient(
+        135deg,
+        #777C91,
+        #D5C7B3
+    );
+}
+
+.imagen-boyaca {
+    background-image: linear-gradient(
+        135deg,
+        #C6A078,
+        #EBD8A9
+    );
+}
+
+.informacion-ruta {
+    padding: 20px;
+}
+
+.informacion-ruta h3 {
+    font-size: 1.2rem;
+    margin: 8px 0 12px;
+    color: #333333;
+}
+
+.informacion-ruta p {
+    margin-bottom: 12px;
+}
+
+.etiqueta-destino {
+    color: #2E7DC4;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.calificacion {
+    color: #8A5B00;
+    font-weight: bold;
+}
+
+.boton-ruta {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #E53935;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.boton-ruta:hover {
+    background-color: #C62828;
+}
+
+.mensaje-vacio {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   9. NAVEGACIÓN INFERIOR
+========================================= */
+
+.navegacion-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2E7DC4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+}
+
+.navegacion-inferior a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.navegacion-inferior a:hover,
+.navegacion-inferior a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   10. DETALLE DE RUTA TURÍSTICA
+========================================= */
+
+.detalle-ruta {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.volver-inicio {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2E7DC4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.volver-inicio:hover {
+    text-decoration: underline;
+}
+
+.portada-ruta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    margin-bottom: 30px;
+}
+
+.imagen-detalle {
+    min-height: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-detalle.imagen-cafetero {
+    min-height: 320px;
+    background-color: #8CBF88;
+    background-image: linear-gradient(
+        135deg,
+        #4F9B62,
+        #D9E6A5
+    );
+}
+
+.contenido-portada {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenido-portada h2 {
+    color: #2E7DC4;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.contenido-portada p {
+    line-height: 1.7;
+    color: #444444;
+}
+
+.contenido-portada .boton-ruta {
+    display: inline-block;
+    width: auto;
+    margin-top: 15px;
+    padding: 12px 22px;
+}
+
+.informacion-detalle,
+.recomendaciones-ruta {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.informacion-detalle h2,
+.recomendaciones-ruta h2 {
+    color: #2E7DC4;
+    margin-bottom: 15px;
+}
+
+.informacion-detalle > p {
+    color: #444444;
+    line-height: 1.8;
+}
+
+.datos-ruta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.dato-ruta {
+    padding: 20px;
+    background: #FFF8DF;
+    border-radius: 10px;
+    border-left: 4px solid #F5C542;
+}
+
+.dato-ruta span {
+    font-size: 28px;
+}
+
+.dato-ruta h3 {
+    font-size: 16px;
+    margin: 12px 0 8px;
+    color: #2E7DC4;
+}
+
+.dato-ruta p {
+    color: #444444;
+    line-height: 1.5;
+}
+
+.recomendaciones-ruta ul {
+    padding-left: 25px;
+    line-height: 2;
+    color: #444444;
+}
+
+.acciones-ruta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.acciones-ruta .boton-ruta,
+.acciones-ruta .boton-secundario {
+    width: auto;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+.mensaje-favorito {
+    min-height: 24px;
+    color: #2166A3;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   11. CONFIGURACIÓN Y ACCESIBILIDAD
+   PASSION COLOMBIA
+========================================= */
+
+body.pagina-configuracion {
+    background-color: #F5C542;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+
+.interfaz-configuracion {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px 20px 85px;
+    position: relative;
+    background-color: #F5C542;
+}
+
+/* Encabezado */
+
+.encabezado-figma {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 15px 10px;
+}
+
+.volver-configuracion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+    color: #2E7DC4;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.encabezado-figma h1 {
+    max-width: 600px;
+    color: #2E7DC4;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+/* Secciones blancas */
+
+.seccion-figma {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 28px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.10);
+}
+
+.seccion-figma h2 {
+    margin-bottom: 20px;
+    color: #2E7DC4;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Controles de accesibilidad */
+
+.control-figma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 65px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.control-numerico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.control-numerico button {
+    min-width: 38px;
+    min-height: 38px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFF8DF;
+    color: #2E7DC4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.control-numerico button:hover {
+    background-color: #F5C542;
+}
+
+.control-numerico output {
+    min-width: 25px;
+    text-align: center;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Interruptor del lector de pantalla */
+
+.interruptor-figma {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.interruptor-figma input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.interruptor-visual {
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    background-color: #777777;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.interruptor-visual::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: transform 0.2s;
+}
+
+.interruptor-figma input:checked + .interruptor-visual {
+    background-color: #2E7DC4;
+}
+
+.interruptor-figma input:checked + .interruptor-visual::before {
+    transform: translateX(22px);
+}
+
+.interruptor-figma input:focus-visible + .interruptor-visual {
+    outline: 3px solid #E53935;
+    outline-offset: 3px;
+}
+
+/* Mensajes accesibles */
+
+.mensaje-figma {
+    min-height: 20px;
+    margin-top: 8px;
+    color: #2166A3;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Opciones de cuenta */
+
+.seccion-cuenta {
+    margin-top: 0;
+}
+
+.opcion-figma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    min-height: 55px;
+    padding: 12px 8px;
+    border-bottom: 1px solid #EEEEEE;
+    border-radius: 6px;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.opcion-figma:hover {
+    background-color: #FFF8DF;
+    color: #2E7DC4;
+}
+
+/* Navegación inferior */
+
+.navegacion-figma {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #2E7DC4;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navegacion-figma a {
+    padding: 8px;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegacion-figma a:hover,
+.navegacion-figma a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+/* Preferencias de accesibilidad */
+
+body.texto-grande {
+    font-size: 18px;
+}
+
+body.texto-muy-grande {
+    font-size: 20px;
+}
+
+body.alto-contraste {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste .seccion-figma {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .seccion-figma h2,
+body.alto-contraste .control-figma,
+body.alto-contraste .opcion-figma,
+body.alto-contraste .control-numerico output {
+    color: #FFFFFF;
+}
+
+body.reducir-animaciones *,
+body.reducir-animaciones *::before,
+body.reducir-animaciones *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+/* Adaptación a dispositivos móviles */
+
+@media (max-width: 600px) {
+    .interfaz-configuracion {
+        padding: 15px 12px 85px;
+    }
+
+    .encabezado-figma {
+        padding: 12px 8px;
+    }
+
+    .encabezado-figma h1 {
+        font-size: 1.65rem;
+    }
+
+    .seccion-figma {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .control-figma {
+        min-height: 58px;
+        gap: 10px;
+        font-size: 0.95rem;
+    }
+
+    .control-numerico {
+        gap: 6px;
+    }
+
+    .control-numerico button {
+        min-width: 32px;
+        min-height: 36px;
+    }
+
+    .navegacion-figma {
+        padding: 8px 5px;
+        gap: 2px;
+    }
+
+    .navegacion-figma a {
+        padding: 8px 3px;
+        font-size: 0.75rem;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================
+   ACCESIBILIDAD FUNCIONAL
+   PASSION COLOMBIA
+========================================= */
+
+/* -----------------------------------------
+   1. TAMAÑO DE FUENTE
+----------------------------------------- */
+
+/* Tamaño inicial: 10 */
+.pagina-configuracion .interfaz-configuracion {
+    font-size: calc(16px * var(--escala-fuente, 1));
+}
+
+/* Los controles también deben adaptarse */
+.pagina-configuracion .seccion-figma,
+.pagina-configuracion .seccion-figma p,
+.pagina-configuracion .seccion-figma label,
+.pagina-configuracion .seccion-figma a,
+.pagina-configuracion .seccion-figma h2 {
+    font-size: inherit;
+}
+
+/* Mantener los títulos destacados */
+.pagina-configuracion .encabezado-figma h1 {
+    font-size: calc(32px * var(--escala-fuente, 1));
+}
+
+.pagina-configuracion .control-figma {
+    font-size: calc(16px * var(--escala-fuente, 1));
+}
+
+.pagina-configuracion .opcion-figma {
+    font-size: calc(16px * var(--escala-fuente, 1));
+}
+
+.pagina-configuracion .navegacion-figma a {
+    font-size: calc(14px * var(--escala-fuente, 1));
+}
+
+
+/* -----------------------------------------
+   2. NIVEL DE CONTRASTE
+----------------------------------------- */
+
+/* Nivel 1: contraste normal */
+.pagina-configuracion {
+    --color-texto-accesible: #333333;
+    --color-titulo-accesible: #2E7DC4;
+    --color-fondo-tarjeta: #FFFFFF;
+}
+
+/* Nivel 2: contraste ligeramente reforzado */
+.pagina-configuracion.contraste-medio {
+    --color-texto-accesible: #222222;
+    --color-titulo-accesible: #15558D;
+    --color-fondo-tarjeta: #FFFFFF;
+}
+
+/* Niveles 4 y 5: alto contraste */
+.pagina-configuracion.contraste-alto {
+    --color-texto-accesible: #000000;
+    --color-titulo-accesible: #003B70;
+    --color-fondo-tarjeta: #FFFFFF;
+}
+
+/* Aplicar los colores seleccionados */
+.pagina-configuracion .seccion-figma {
+    background-color: var(--color-fondo-tarjeta);
+    color: var(--color-texto-accesible);
+}
+
+.pagina-configuracion .seccion-figma h2 {
+    color: var(--color-titulo-accesible);
+}
+
+.pagina-configuracion .control-figma {
+    color: var(--color-texto-accesible);
+}
+
+.pagina-configuracion .opcion-figma {
+    color: var(--color-texto-accesible);
+}
+
+.pagina-configuracion .control-numerico output {
+    color: var(--color-texto-accesible);
+}
+
+/* Mantener visible el foco del teclado */
+.pagina-configuracion button:focus-visible,
+.pagina-configuracion a:focus-visible,
+.pagina-configuracion input:focus-visible {
+    outline: 3px solid #E53935;
+    outline-offset: 3px;
+}

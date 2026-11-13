@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passion Colombia | Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor-login">
+
+        <section class="tarjeta-login">
+
+            <header class="encabezado-login">
+                <h1>Passion Colombia</h1>
+                <p>Descubre Colombia, vive nuevas experiencias</p>
+            </header>
+
+            <h2>Iniciar sesión</h2>
+
+            <form id="formulario-login">
+
+                <div class="grupo-campo">
+                    <label for="usuario">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Ingresa tu correo electrónico"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Ingresa tu contraseña"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <a href="#" id="enlace-recuperar" class="enlace-recuperar">
+                    ¿Olvidaste tu contraseña?
+                </a>
+
+                <button type="submit" class="boton-principal">
+                    Ingresar
+                </button>
+
+            </form>
+
+            <p class="texto-registro">
+                ¿No tienes cuenta?
+                <a href="registro.html">Regístrate aquí</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

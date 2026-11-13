@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle de ruta | Passion Colombia</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="pagina-ruta">
+
+    <header class="cabecera-home">
+        <div class="marca-home">
+            <h1>Passion Colombia</h1>
+            <p>Descubre Colombia, vive nuevas experiencias</p>
+        </div>
+
+        <a href="configuracion.html" class="enlace-perfil">
+            Mi perfil
+        </a>
+    </header>
+
+    <main class="contenido-home detalle-ruta">
+
+        <a href="home.html" class="volver-inicio">
+            ← Volver a destinos
+        </a>
+
+        <section class="portada-ruta">
+            <div class="imagen-detalle imagen-cafetero"
+                 role="img"
+                 aria-label="Paisaje representativo del Eje Cafetero">
+            </div>
+
+            <div class="contenido-portada">
+                <span class="etiqueta-destino">Naturaleza y cultura</span>
+
+                <h2 id="nombre-ruta">Eje Cafetero</h2>
+
+                <p id="descripcion-ruta">
+                    Descubre paisajes verdes, cafetales, pueblos coloridos
+                    y la tradición cafetera de Colombia.
+                </p>
+
+                <p class="calificacion">★ 4.9 / 5.0</p>
+
+                <a href="#informacion-ruta" class="boton-ruta">
+                    Conocer la ruta
+                </a>
+            </div>
+        </section>
+
+        <section id="informacion-ruta" class="informacion-detalle">
+            <h2>Sobre este destino</h2>
+
+            <p>
+                Vive una experiencia que combina naturaleza, cultura,
+                gastronomía y tradiciones colombianas. Explora paisajes
+                únicos y conoce la riqueza de las regiones de nuestro país.
+            </p>
+
+            <div class="datos-ruta">
+                <article class="dato-ruta">
+                    <span aria-hidden="true">🌿</span>
+                    <h3>Tipo de experiencia</h3>
+                    <p>Naturaleza y cultura</p>
+                </article>
+
+                <article class="dato-ruta">
+                    <span aria-hidden="true">📍</span>
+                    <h3>Destino</h3>
+                    <p id="ubicacion-ruta">Región cafetera de Colombia</p>
+                </article>
+
+                <article class="dato-ruta">
+                    <span aria-hidden="true">⭐</span>
+                    <h3>Calificación</h3>
+                    <p>4.9 de 5.0</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="recomendaciones-ruta">
+            <h2>¿Por qué visitar este destino?</h2>
+
+            <ul>
+                <li>Disfrutar de los paisajes naturales de Colombia.</li>
+                <li>Conocer las tradiciones y la cultura de la región.</li>
+                <li>Explorar pueblos llenos de historia y color.</li>
+                <li>Descubrir la gastronomía y los productos locales.</li>
+            </ul>
+        </section>
+
+        <div class="acciones-ruta">
+            <a href="home.html" class="boton-secundario">
+                Ver otros destinos
+            </a>
+
+            <button type="button" id="boton-favorito" class="boton-ruta">
+                ☆ Agregar a favoritos
+            </button>
+        </div>
+
+        <p id="mensaje-favorito" class="mensaje-favorito"
+           role="status" aria-live="polite"></p>
+
+    </main>
+
+    <nav class="navegacion-inferior" aria-label="Navegación principal">
+        <a href="home.html">Inicio</a>
+        <a href="home.html#buscar-destino">Buscar</a>
+        <a href="home.html#destinos">Destinos</a>
+        <a href="configuracion.html">Perfil</a>
+    </nav>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
